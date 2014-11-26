@@ -4,6 +4,6 @@
  */
 
 module.exports = {
-    'url' : 'mongodb://localhost/meanvision',
+    'url' : 'mongodb://bnice:V$parameter12@ds053380.mongolab.com:53380/meanvision',
     'produrl': "mongodb://bnice:V$parameter12@ds053380.mongolab.com:53380/meanvision"
 }
