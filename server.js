@@ -41,14 +41,14 @@ else if (env ==='development'){dbConfig.url= 'mongodb://localhost/meanvision';
 mongoose.createConnection(dbConfig.url);
 
 
-var db= mongoose.connection;
+/*var db= mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error....'));
 db.once('open', function callback(){console.log("meanvision opened")});
 
 
 User.find(function(err, doc){if(err) throw err;
 
-    console.log(doc)});
+    console.log(doc)});*/
 
 
 /*var newUser= new User({username:"Jane",password:"smith",email:"jane.smith@node.com", gender:"Male", address:"Lagos"});
