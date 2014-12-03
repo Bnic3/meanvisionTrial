@@ -34,10 +34,11 @@ require("./config/express")(app, passport);
 
 
 /*connection  to the database*/
-if(env === 'production'){dbConfig.url = "mongodb://bnice:V$parameter12@ds053380.mongolab.com:53380/meanvision";
+/*if(env === 'production'){dbConfig.url = "mongodb://bnice:V$parameter12@ds053380.mongolab.com:53380/meanvision";
     mongoose.createConnection(dbConfig.url);}
 else if (env ==='development'){dbConfig.url= 'mongodb://localhost/meanvision';
-    mongoose.createConnection(dbConfig.url);}
+    mongoose.createConnection(dbConfig.url);}*/
+mongoose.createConnection(dbConfig.url);
 
 
 var db= mongoose.connection;
